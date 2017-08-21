@@ -1,5 +1,4 @@
 # Drinks Machine Factory
-* **Lab Author** - Leon Hunter
 * **Purpose** - to demonstrate the [Abstract Factory Design pattern](https://sourcemaking.com/design_patterns/abstract_factory)
 
 # Domain Implementation
