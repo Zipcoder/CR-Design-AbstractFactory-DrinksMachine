@@ -81,4 +81,4 @@
 
 
 # Part 8 - Create calss `Barista`
-* Using the builder lab as an example, redefine the concrete factory classes to use composite `Barista` which behaves as a _builder_ for `Drink` objects.
+* Using the [builder lab](https://github.com/Zipcoder/TC-Spring-LicenseBuilder-Application) as an example, redefine the concrete factory classes to use composite `Barista` which behaves as a _builder_ for `Drink` objects.
