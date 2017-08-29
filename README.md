@@ -45,7 +45,7 @@
 	* `DrinksMachine` should declare an abstract method `Drink dispenseDrink(String type)`
 	
 	
-###### Part 2.1 - Create class CoffeeMachine
+###### Part 2.1 - Create class `CoffeeMachine`
 * Create a subclass of `DrinkMachine<CofeeType>` named `CoffeeMachine`.
 * `CoffeeMachine` should internally define an enum `CoffeeType` with enumerations for each of the respective `Coffee` subclasses.
 * Ensure that the inherited method `dispenseDrink` returns a drink with respect to the method argument.
@@ -104,7 +104,7 @@
 * The class should have a `dmf` field which is an injection of `DrinksMachineFactory`.
 * The class should have a `map` field which is a mapping of `String` to `DrinksMachine`.
 * The class should define a `addToMap` method which takes an argument of a _variable number of_ `DrinkMachine` objects and adds each of them to the `HashMap` as a mapping from their _simple class name_.
-* The class should define a `get` method, which takes an argument of a `String` and returns a respective `DrinksMachine` object.
+* The class should define a `get` method, which takes an arugment of a `String` and rerturns a respective `DrinksMachine` object.
 	* If the mapping returns a `null` value, throw an `IllegalArgumentException`.
 * Use this as the constructor definition.
 
@@ -125,6 +125,18 @@ public DrinksMachineFactoryLookUp() {
 
 
 
+## Repository Implementation
+* _Repositories_ or [Data Access Objects (DAO)](https://en.wikipedia.org/wiki/Data_access_object), provide an abstraction for interacting with _datastores_.
+* Typically DAOs include an interface that provides a set of finder methods such as `findById`, `findAll`, for retrieving data, and methods to persist and delete data.
+* It is customary to have one `Repository` per `domain` object.
+* Create a sub-package of `io.zipcoder.drinks_machine_factory` named `repositories`.
+
+### Create class `DrinkController`
+* Create a class `DrinkRepository` which is a subclass of `CrudRepository` of parameterized type `Drink` and `Long`.
+
+
+
+
 
 
 
@@ -134,12 +146,24 @@ public DrinksMachineFactoryLookUp() {
 
 
 ## Controller Implementation
-
 * _Controllers_ provides all of the necessary [endpoints](https://en.wikipedia.org/wiki/Web_API##Endpoints) to access and manipulate respective domain objects.
 	*  REST resources are identified using URI endpoints.
 * Create a sub package of `io.zipcoder.tc_spring_vehiclefactory_application` named `controller`.
 
 
+### Create class `DrinksMachineFactoryController`
+* The `DrinkRepository` is injected into the class.
+* The `DrinksMachineFactoryLookUp` is injected into the class.
+* The class has a `createDrink` method which returns a `ResponseEntity<?>` and takes an argument of `String drinksMachineName` and `String drinkName`.
+	* Ensure each of these parameters are annotated respectively:
+		* `@RequestParam(value="drinksName")`
+		* `@RequestParam(value="drinksMachineName")`
+
+### Create class `DrinkController`
+* Create a class `DrinkController.
+* The `DrinkRepository` is injected into the class.
+* The class should define a `getAllDrinks` method which has a return type of `ResponseEntity<Iterable<Drink>>`.
+* The class should define a `getDrink` method which has a return type of `ReponseEntity<?>` and takes an argument of type `Long` corresponding to the drinks's ID.	
 
 
 
