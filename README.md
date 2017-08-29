@@ -76,3 +76,9 @@
 	*  REST resources are identified using URI endpoints.
 * Create a sub package of `io.zipcoder.tc_spring_vehiclefactory_application` named `controller`.
 # Part 7 - Test via Postman
+
+
+
+
+# Part 8 - Create calss `Barista`
+* Using the builder lab as an example, redefine the concrete factory classes to use composite `Barista` which behaves as a _builder_ for `Drink` objects.
