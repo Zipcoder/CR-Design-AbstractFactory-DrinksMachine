@@ -104,7 +104,7 @@
 * The class should have a `dmf` field which is an injection of `DrinksMachineFactory`.
 * The class should have a `map` field which is a mapping of `String` to `DrinksMachine`.
 * The class should define a `addToMap` method which takes an argument of a _variable number of_ `DrinkMachine` objects and adds each of them to the `HashMap` as a mapping from their _simple class name_.
-* The class should define a `get` method, which takes an arugment of a `String` and rerturns a respective `DrinksMachine` object.
+* The class should define a `get` method, which takes an argument of a `String` and returns a respective `DrinksMachine` object.
 	* If the mapping returns a `null` value, throw an `IllegalArgumentException`.
 * Use this as the constructor definition.
 
