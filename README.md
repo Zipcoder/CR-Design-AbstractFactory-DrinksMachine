@@ -1,5 +1,6 @@
 # Drinks Machine Factory
 * **Purpose** - to demonstrate the [Abstract Factory Design pattern](https://sourcemaking.com/design_patterns/abstract_factory)
+* **Design Description** - Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 ## Domain Implementation
 
