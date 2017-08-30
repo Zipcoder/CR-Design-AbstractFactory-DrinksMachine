@@ -164,7 +164,6 @@ public DrinksMachineFactoryLookUp() {
 * It is customary to have one `Repository` per `domain` object.
 * Create a sub-package of `io.zipcoder.drinks_machine_factory` named `repositories`.
 
-### Part 4 - Create Repositories
 
 #### Part 4.0 - Create class `DrinkRepository`
 * Create a class `DrinkRepository` which is a subclass of `CrudRepository` of parameterized type `Drink` and `Long`.
@@ -195,8 +194,6 @@ public DrinksMachineFactoryLookUp() {
 * _Controllers_ provides all of the necessary [endpoints](https://en.wikipedia.org/wiki/Web_API##Endpoints) to access and manipulate respective domain objects.
 	*  REST resources are identified using URI endpoints.
 * Create a sub package of `io.zipcoder.tc_spring_vehiclefactory_application` named `controller`.
-
-### Part 5 - Create Controllers
 
 
 ### Part 5.0 - Create class `DrinksMachineFactoryController`
