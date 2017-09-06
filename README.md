@@ -117,7 +117,7 @@
 
 
 
-### Part 3 - Drink Machine Factory
+### Part 3 - Drink Creator Factory
 
 #### Part 3.0 - Create class `DrinksMachineFactory`
 * Create a class `DrinksMachineFactory` in the `service` package.
