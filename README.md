@@ -164,6 +164,7 @@ public DrinksMachineFactoryLookUp() {
 * It is customary to have one `Repository` per `domain` object.
 * Create a sub-package of `io.zipcoder.drinks_machine_factory` named `repositories`.
 
+## Part 4 - Drink Repository
 
 #### Part 4.0 - Create class `DrinkRepository`
 * Create a class `DrinkRepository` which is a subclass of `CrudRepository` of parameterized type `Drink` and `Long`.
