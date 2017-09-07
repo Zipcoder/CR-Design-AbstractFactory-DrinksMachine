@@ -1,3 +1,5 @@
+<img src="http://www.uml-diagrams.org/examples/class-example-abstract-factory.png">
+
 # Drinks Machine Factory
 * **Purpose** - to demonstrate the [Abstract Factory Design pattern](https://sourcemaking.com/design_patterns/abstract_factory)
 * **Design Description** - Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
