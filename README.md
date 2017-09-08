@@ -208,7 +208,7 @@ public DrinksMachineFactoryLookUp() {
 		* `@RequestParam(value="drinksMachineName")`
 
 ### Part 5.1 - Create class `DrinkController`
-* Create a class `DrinkController.
+* Create a class `DrinkController`.
 * The `DrinkRepository` is injected into the class.
 * The class should define a `getAllDrinks` method which has a return type of `ResponseEntity<Iterable<Drink>>`.
 * The class should define a `getDrink` method which has a return type of `ReponseEntity<?>` and takes an argument of type `Long` corresponding to the drinks's ID.	
